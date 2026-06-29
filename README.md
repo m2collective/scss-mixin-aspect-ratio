@@ -2,10 +2,7 @@
 
 A package for integrating a mixin to create proportional blocks.
 
-![npm](https://img.shields.io/npm/v/@bu0nq/scss-mixin-aspect-ratio?style=for-the-badge)
-![npm](https://img.shields.io/npm/dt/@bu0nq/scss-mixin-aspect-ratio?style=for-the-badge)
-
-Documentation: [EN](README.md) | [RU](README.RU.md)
+![npm](https://img.shields.io/npm/v/@m2collective/scss-mixin-aspect-ratio?style=for-the-badge)
 
 ___
 
@@ -14,7 +11,7 @@ ___
 You can install the package automatically using NPM:
 
 ```
-npm i @bu0nq/scss-mixin-aspect-ratio
+npm i @m2collective/scss-mixin-aspect-ratio
 ```
 
 ## Usage
@@ -22,12 +19,26 @@ npm i @bu0nq/scss-mixin-aspect-ratio
 To use the package, import it into your project:
 
 ```scss
-@use "@bu0nq/scss-mixin-aspect-ratio" as *;
+@use "@m2collective/scss-mixin-aspect-ratio" as *;
 
 .demo {
     @include aspect-ratio(1, 1) {
-        // Styles
-    };
+        background-color: #000;
+    }
+}
+
+// Return
+
+.demo {
+    position: relative;
+    background-color: #000;
+}
+
+.demo:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
 }
 ```
 
@@ -36,11 +47,9 @@ To use the package, import it into your project:
 You can change the namespace during mixin import and use the mixin with a different namespace:
 
 ```scss
-@use "@bu0nq/scss-mixin-aspect-ratio" as mixin;
-
-.demo {
-    @include mixin.aspect-ratio(1, 1) {
-        // Styles
-    };
-}
+@use "@m2collective/scss-mixin-aspect-ratio" as mixin;
 ```
+
+## License
+
+The MIT License (MIT). Please see the [License file](LICENSE.txt) for more information.

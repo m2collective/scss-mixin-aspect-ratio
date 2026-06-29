@@ -1,14 +1,13 @@
 {
-  "name": "@bu0nq/scss-mixin-aspect-ratio",
-  "version": "1.0.0",
-  "description": "A package for integrating a mixin to create proportional blocks",
+  "name": "@m2collective/scss-mixin-aspect-ratio",
+  "version": "0.1.0",
+  "description": "A package for integrating a mixin to create proportional blocks.",
   "keywords": [
+    "m2collective",
     "scss",
-    "style",
-    "frontend",
     "mixin",
-    "mixins",
-    "aspect-ratio"
+    "aspect-ratio",
+    "style"
   ],
   "main": "index.scss",
   "exports": {
@@ -17,22 +16,22 @@
       "default": "./index.scss"
     }
   },
-  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "license": "MIT",
   "author": {
     "name": "bu0nq",
     "email": "hello@bu0nq.ru"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bu0nq/scss-mixin-aspect-ratio.git"
+    "url": "git+https://github.com/m2collective/scss-mixin-aspect-ratio.git"
   },
   "bugs": {
-    "url": "https://github.com/bu0nq/scss-mixin-aspect-ratio/issues"
+    "url": "https://github.com/m2collective/scss-mixin-aspect-ratio/issues"
   },
-  "homepage": "https://github.com/bu0nq/scss-mixin-aspect-ratio#readme",
+  "homepage": "https://github.com/m2collective/scss-mixin-aspect-ratio#readme",
   "publishConfig": {
     "access": "public"
   }
