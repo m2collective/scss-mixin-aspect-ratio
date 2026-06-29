@@ -23,8 +23,22 @@ To use the package, import it into your project:
 
 .demo {
     @include aspect-ratio(1, 1) {
-        //...
-    };
+        background-color: #000;
+    }
+}
+
+// Return
+
+.demo {
+    position: relative;
+    background-color: #000;
+}
+
+.demo:before {
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 100%;
 }
 ```
 
@@ -34,12 +48,6 @@ You can change the namespace during mixin import and use the mixin with a differ
 
 ```scss
 @use "@m2collective/scss-mixin-aspect-ratio" as mixin;
-
-.demo {
-    @include mixin.aspect-ratio(1, 1) {
-        //...
-    };
-}
 ```
 
 ## License
