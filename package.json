@@ -1,6 +1,6 @@
 {
   "name": "@m2collective/scss-mixin-aspect-ratio",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A package for integrating a mixin to create proportional blocks.",
   "keywords": [
     "m2collective",
